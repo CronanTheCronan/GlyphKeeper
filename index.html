@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlyphKeeper — The campaign memory that stays true</title>
+  <meta name="description" content="Local-first Discord co-pilot for human Dungeon Masters. Grounded campaign memory that never invents canon.">
+  <link rel="canonical" href="https://glyphkeeper.net/">
+
+  <meta property="og:title" content="GlyphKeeper — The campaign memory that stays true">
+  <meta property="og:description" content="Your story. Our quest. Structured campaign continuity for Discord tables — local Ollama, human DM in control.">
+  <meta property="og:url" content="https://glyphkeeper.net/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://glyphkeeper.net/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GlyphKeeper — The campaign memory that stays true">
+  <meta name="twitter:description" content="Your story. Our quest. Local-first Discord co-pilot that keeps campaign memory true.">
+  <meta name="twitter:image" content="https://glyphkeeper.net/assets/og.jpg">
+  <meta name="theme-color" content="#07060c">
+
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="GlyphKeeper home">
+        <img src="assets/glyph-mark.png" alt="" width="40" height="40" class="brand-mark">
+        <span class="brand-name">GlyphKeeper</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#commands">Commands</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a class="nav-cta" href="#start">Get started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-stage">
+        <img
+          class="hero-banner"
+          src="assets/hero-banner.jpg"
+          width="1916"
+          height="821"
+          alt="GlyphKeeper emblem and adventurers entering a glowing purple cavern — Your story. Our quest."
+          fetchpriority="high"
+        >
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content container">
+          <p class="eyebrow">Local-first Discord co-pilot for human DMs</p>
+          <h1 id="hero-heading" class="hero-product-line">The campaign memory that stays true.</h1>
+          <p class="hero-support">
+            Structured continuity for characters, places, events, and summaries—grounded in what actually happened at your table.
+            GlyphKeeper never invents campaign canon. You stay sovereign.
+          </p>
+          <div class="hero-actions">
+            <!-- PLACEHOLDER: replace with Discord bot invite URL -->
+            <a class="btn btn-primary" href="#start" data-placeholder="discord-invite">Add to Discord</a>
+            <!-- PLACEHOLDER: replace with GitHub repo URL -->
+            <a class="btn btn-ghost" href="https://github.com/" data-placeholder="github" rel="noopener noreferrer" target="_blank">GitHub</a>
+            <!-- PLACEHOLDER: replace with docs URL -->
+            <a class="btn btn-link" href="#start" data-placeholder="docs">Docs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section" id="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">The problem</p>
+          <h2 id="problem-heading">Long campaigns deserve better than scattershot notes</h2>
+          <p class="section-lead">
+            Experienced DMs on Discord know the pain: the story is rich, the table is invested—and continuity lives in twelve places, none of them trustworthy.
+          </p>
+        </header>
+
+        <div class="pain-grid">
+          <article class="card pain-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4 0-7 2-7 4v1h14v-1c0-2-3-4-7-4Z"/><path d="M18 8h.01M20 11v2M16 11v2"/></svg>
+            </div>
+            <h3>Forgotten NPCs</h3>
+            <p>Names, motives, and half-finished favors vanish between sessions. The table notices before your notes do.</p>
+          </article>
+          <article class="card pain-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h10M4 18h14"/><path d="M17 10l3 3-3 3"/></svg>
+            </div>
+            <h3>Lost plot threads</h3>
+            <p>Open questions scatter across chat history, voice notes, and “we’ll get back to that.” Months later, nobody owns the thread.</p>
+          </article>
+          <article class="card pain-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 4h9a2 2 0 0 1 2 2v12l-4-2-4 2-4-2-4 2V6a2 2 0 0 1 2-2h1"/><path d="M9 9h6M9 13h4"/></svg>
+            </div>
+            <h3>Inconsistent notes</h3>
+            <p>External docs drift from what Discord already said. Two truths appear—and neither is sealed.</p>
+          </article>
+          <article class="card pain-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Bookkeeping killjoy</h3>
+            <p>Post-session write-ups steal the high of a great night. Momentum dies in a blank document.</p>
+          </article>
+        </div>
+
+        <p class="section-closer reveal">Your campaign already has a truth. GlyphKeeper keeps it sealed—and available at the table.</p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt" id="how" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">How GlyphKeeper works</p>
+          <h2 id="how-heading">From channel bind to grounded summary</h2>
+          <p class="section-lead">
+            A clear loop for live play: bind the campaign, run the session, ask grounded questions, keep memory under your control.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">01</span>
+            <div class="step-body">
+              <h3>Bind a campaign to a Discord channel</h3>
+              <p>Create the campaign where you play. That channel becomes the scoped home for every record and every answer.</p>
+              <code class="inline-cmd">/campaign create</code>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <div class="step-body">
+              <h3>Start a session</h3>
+              <p>Open play mode when the table sits down. Co-pilot turns and durable extraction stay tied to the active session.</p>
+              <code class="inline-cmd">/session start</code>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <div class="step-body">
+              <h3>Ask by mentioning the bot</h3>
+              <p>Answers combine authoritative campaign records, campaign-scoped semantic recall, and light conversational context—never free invention of canon.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">04</span>
+            <div class="step-body">
+              <h3>Automatic durable event extraction</h3>
+              <p>Important beats can be stored with importance and confidence thresholds. Known names normalize to their canonical campaign spelling. Low-value noise is dropped.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">05</span>
+            <div class="step-body">
+              <h3>Inspect, edit, forget, or regenerate</h3>
+              <p>Browse the timeline, recall by meaning, correct text, link characters and locations, preview deletions, and rebuild summaries from stored truth.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">06</span>
+            <div class="step-body">
+              <h3>End session → grounded summaries</h3>
+              <p>Session and campaign summaries use only authoritative stored data—recap, key outcomes, and active threads you can trust next week.</p>
+              <code class="inline-cmd">/session end</code>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Core capabilities</p>
+          <h2 id="features-heading">Memory tools built for the table that already exists</h2>
+          <p class="section-lead">
+            Continuity without the bookkeeping burden—and without handing the story to a chatbot that freestyles your world.
+          </p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="card feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="8" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="12" cy="16" r="2"/><path d="M8 9l3 5M16 9l-3 5M8 8h8"/></svg>
+            </div>
+            <h3>Grounded memory &amp; semantic recall</h3>
+            <p>Campaign records are the source of truth. Semantic search stays campaign-scoped so answers pull from <em>your</em> history—not a generic model’s imagination.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h16v4H4zM4 11h10v8H4zM16 11h4v8h-4z"/><path d="M7 7h.01"/></svg>
+            </div>
+            <h3>Durable event extraction</h3>
+            <p>Importance and confidence filtering keep junk out of canon. Entity names normalize to the spellings already stored for the campaign.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/><path d="M16 16l2 2 4-4"/></svg>
+            </div>
+            <h3>Full memory toolkit</h3>
+            <p>Timeline, recall, edit, forget (preview then confirm), and link or unlink characters and locations. Repair drift without rewriting history by hand in a wiki.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4h10a2 2 0 0 1 2 2v14l-3-1.5L12 20l-3-1.5L6 20V6a2 2 0 0 1 2-2z"/><path d="M9 9h6M9 13h4"/></svg>
+            </div>
+            <h3>Grounded session &amp; campaign summaries</h3>
+            <p>Summaries only use authoritative stored data—structured recap, key outcomes, and active threads. Regenerate when records change; the fiction stays honest.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Co-DM allowlist</h3>
+            <p>Owners manage who can mutate durable memory. Co-DMs share the load; the public table can still inspect continuity without rewriting it.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M12 8v8"/><circle cx="18" cy="6" r="2"/></svg>
+            </div>
+            <h3>Local-first with Ollama</h3>
+            <p>Chat and embeddings run on your machine through Ollama. No cloud LLM required for the co-pilot path. Your inference stays home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMANDS -->
+    <section class="section section-alt" id="commands" aria-labelledby="commands-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Command surface</p>
+          <h2 id="commands-heading">Slash commands that respect the table</h2>
+          <p class="section-lead">
+            Mutations stay protected. Inspection stays open. Here’s a taste of the surface—not the full manual.
+          </p>
+        </header>
+
+        <div class="command-callout reveal" role="note">
+          <strong>Permissions at a glance:</strong>
+          <span class="chip">Public — inspect</span>
+          <span class="chip chip-mutator">Mutator — owner or Co-DM</span>
+          <span class="chip chip-owner">Owner — Co-DM allowlist</span>
+        </div>
+
+        <div class="command-grid">
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/campaign create</code>
+            <p class="cmd-who"><span class="chip">Channel</span> Become owner &amp; bind the campaign</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/session start</code>
+            <p class="cmd-who"><span class="chip chip-mutator">Mutator</span> Open the active play session</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/session end</code>
+            <p class="cmd-who"><span class="chip chip-mutator">Mutator</span> Save grounded summaries &amp; close session</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/memory recall</code>
+            <p class="cmd-who"><span class="chip">Public</span> Semantic search over campaign events</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/memory timeline</code>
+            <p class="cmd-who"><span class="chip">Public</span> Browse recent events newest-first</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/memory edit</code>
+            <p class="cmd-who"><span class="chip chip-mutator">Mutator</span> Correct event text; refresh search vectors</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/memory forget</code>
+            <p class="cmd-who"><span class="chip chip-mutator">Mutator</span> Preview matches, then confirm delete</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/codm add</code>
+            <p class="cmd-who"><span class="chip chip-owner">Owner</span> Authorize a Co-DM on the allowlist</p>
+          </article>
+          <article class="cmd-card reveal">
+            <code class="cmd-name">/memory regenerate-summary</code>
+            <p class="cmd-who"><span class="chip chip-mutator">Mutator</span> Rebuild session, campaign, or both</p>
+          </article>
+        </div>
+
+        <p class="section-closer reveal">Mutations reply ephemerally. Unauthorized users hear a clear “owner required” or “owner or Co-DM required”—not a vague failure.</p>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section" id="philosophy" aria-labelledby="philosophy-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Philosophy</p>
+          <h2 id="philosophy-heading">Not an AI DM. Not another notebook.</h2>
+          <p class="section-lead">
+            GlyphKeeper sits where long-running Discord tables actually need help: live presence, trusted structure, and human control.
+          </p>
+        </header>
+
+        <div class="contrast-grid">
+          <article class="card contrast-card reveal">
+            <p class="contrast-label">Full AI Dungeon Masters</p>
+            <h3>Invent &amp; take over</h3>
+            <p>They generate plot, play NPCs as gospel, and slowly replace the human’s creative authority. Fun as toys—dangerous as campaign truth.</p>
+          </article>
+          <article class="card contrast-card reveal">
+            <p class="contrast-label">Pure note-taking tools</p>
+            <h3>Outside the table</h3>
+            <p>Wikis and docs live away from Discord. They don’t hear the session, don’t stay grounded in play, and drift the moment you’re tired.</p>
+          </article>
+          <article class="card contrast-card contrast-highlight reveal">
+            <p class="contrast-label">GlyphKeeper</p>
+            <h3>Live Discord + sealed memory</h3>
+            <p>Co-pilot in the channel. Structured records as authority. Owner and Co-DMs decide what endures. The human DM stays sovereign.</p>
+          </article>
+        </div>
+
+        <ul class="pillars reveal">
+          <li><strong>Memory is the source of truth.</strong> The model narrates around retrieved state; it does not invent canon.</li>
+          <li><strong>The bot is a co-pilot</strong>—a continuity engine, never a replacement for the person running the game.</li>
+          <li><strong>Owner + authorized Co-DMs</strong> retain explicit control over durable memory.</li>
+          <li><strong>Continuity without burden.</strong> Long campaigns feel personal and continuous so you can focus on the table.</li>
+        </ul>
+
+        <p class="section-closer reveal">Not a replacement DM. Not another notebook that forgets what Discord already said. Continuity you can trust.</p>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section section-alt" id="roadmap" aria-labelledby="roadmap-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Coming soon</p>
+          <h2 id="roadmap-heading">Roadmap that protects the core</h2>
+          <p class="section-lead">
+            Expand continuity and table comfort first. Simulation later—and only if real tables demand it.
+          </p>
+        </header>
+
+        <div class="roadmap-grid">
+          <article class="card roadmap-card reveal">
+            <h3>Near-term</h3>
+            <ul>
+              <li>Thin Solo Mode MVP</li>
+              <li>Absent Player — opt-in, player consent required, tagged &amp; reviewable</li>
+              <li>Session 0 intake — setting, tone, goals, bonds, open threads</li>
+              <li>DM Planning Session — pre-session co-planning grounded in party history and state</li>
+            </ul>
+          </article>
+          <article class="card roadmap-card reveal">
+            <h3>Table convenience</h3>
+            <ul>
+              <li>XP vs Milestone advancement tracking</li>
+              <li>Discord-native dice roller</li>
+              <li>Lightweight searchable homebrew notes</li>
+            </ul>
+          </article>
+          <article class="card roadmap-card reveal">
+            <h3>Surface expansion</h3>
+            <ul>
+              <li>Cloud web dashboard — timeline, entity editor, Session 0 flows, multi-device access</li>
+              <li>Same Supabase source of truth as the bot</li>
+              <li>Future export / light integrations (Notion, etc.)</li>
+              <li>Discord remains the primary live-play client</li>
+            </ul>
+          </article>
+          <article class="card roadmap-card reveal">
+            <h3>Deliberately later</h3>
+            <ul>
+              <li>Combat assistant (track / log / suggest) before any full combat engine</li>
+              <li>Deeper simulation only if demanded by real usage</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="principles-banner reveal">
+          <h3 class="principles-title">Guiding principles that stay true</h3>
+          <ul class="principles-list">
+            <li>Memory remains the source of truth</li>
+            <li>Human DM stays sovereign</li>
+            <li>Continuity over pure simulation</li>
+            <li>Progressive enhancement — the local-first path continues to work</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- START -->
+    <section class="section" id="start" aria-labelledby="start-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Requirements</p>
+          <h2 id="start-heading">Getting started</h2>
+          <p class="section-lead">
+            GlyphKeeper runs on your Windows machine as a Discord bot with local models and a Supabase-backed memory store.
+          </p>
+        </header>
+
+        <div class="req-grid reveal">
+          <span class="req-chip">Windows 10 / 11</span>
+          <span class="req-chip">Node.js 24+</span>
+          <span class="req-chip">Discord bot + Message Content Intent</span>
+          <span class="req-chip">Supabase project</span>
+          <span class="req-chip">Ollama + local chat &amp; embedding models</span>
+        </div>
+
+        <div class="setup-flow card reveal">
+          <h3>One-line setup flow</h3>
+          <p class="setup-line">Clone → configure <code>.env</code> → pull Ollama models → apply Supabase migrations → run the bot.</p>
+          <p class="setup-note">
+            Keep the host awake and online while you play: Ollama and GlyphKeeper both run locally.
+            “Local-first” means inference and bot hosting on your machine; durable campaign records live in your Supabase project.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/" data-placeholder="github" rel="noopener noreferrer" target="_blank">View on GitHub</a>
+            <a class="btn btn-ghost" href="#top" data-placeholder="docs">Read the docs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/glyph-mark.png" alt="" width="48" height="48" class="footer-mark">
+        <div>
+          <p class="footer-name">glyphkeeper.net</p>
+          <p class="footer-tag">Your story. Our quest. · The campaign memory that stays true.</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <!-- PLACEHOLDER links -->
+        <a href="https://github.com/" data-placeholder="github" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="#start" data-placeholder="docs">Docs</a>
+        <a href="https://discord.com/" data-placeholder="discord" rel="noopener noreferrer" target="_blank">Discord</a>
+      </nav>
+      <p class="footer-legal">
+        GlyphKeeper uses open SRD concepts where relevant and is independent of Wizards of the Coast.
+        Wizards of the Coast, Dungeons &amp; Dragons, and related marks are trademarks of their respective owners.
+      </p>
+      <p class="footer-copy">
+        © <span id="year">2026</span> GlyphKeeper · Built for DMs who keep their campaigns alive
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
